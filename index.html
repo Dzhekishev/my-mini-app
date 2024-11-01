@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мини-приложение</title>
+    <style>
+        /* Установка фона и стили для всей страницы */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #4c4cfd, #7e86fa);
+            font-family: Arial, sans-serif;
+        }
+        /* Создание контейнера */
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            max-width: 400px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        /* Стиль заголовка */
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        /* Стили для кнопок */
+        .button {
+            background-color: #4c4cfd;
+            color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        /* Анимация кнопок при наведении */
+        .button:hover {
+            background-color: #3b3be8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Мини-приложение</h1>
+        <button class="button" onclick="alert('Здесь будут слова!')">Слова</button>
+        <button class="button" onclick="alert('Здесь будет карта!')">Карта</button>
+        <button class="button" onclick="alert('Здесь будет информация!')">Информация</button>
+        <button class="button" onclick="alert('Здесь будут фразы!')">Фразы</button>
+    </div>
+</body>
+</html>
