@@ -60,6 +60,23 @@
         .back-btn:hover {
             background-color: #3b3be8;
         }
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .nav-button {
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
+        }
+        .nav-button:hover {
+            color: #ccc;
+        }
     </style>
 </head>
 <body>
@@ -129,6 +146,10 @@
         <p>Классическая башня с невероятным видом.</p>
     </div>
 
-  
+    <!-- Навигационные кнопки назад и вперед -->
+    <div class="nav-buttons">
+        <button class="nav-button" onclick="history.back()">&#8592; Назад</button>
+        <button class="nav-button" onclick="history.forward()">Вперед &#8594;</button>
+    </div>
 </body>
 </html>
