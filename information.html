@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Информация</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #4c4cfd, #7e86fa);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        h1 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .info-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 90%;
+            max-width: 600px;
+        }
+        .info-item {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .info-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        .info-item:hover {
+            transform: scale(1.05);
+        }
+        .info-item:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <h1>Информация</h1>
+    <div class="info-container">
+        <a href="https://www.example.com/information1" target="_blank" class="info-item">
+            <img src="https://via.placeholder.com/600x200?text=Азиатский+маршрут" alt="Информация 1">
+        </a>
+        <a href="galata_route.html" class="info-item">
+            <img src="https://via.placeholder.com/600x200?text=Галатский+маршрут" alt="Галатский маршрут">
+        </a>
+        <a href="https://www.example.com/information3" target="_blank" class="info-item">
+            <img src="https://via.placeholder.com/600x200?text=Европейский+маршрут" alt="Информация 3">
+        </a>
+    </div>
+</body>
+</html>
