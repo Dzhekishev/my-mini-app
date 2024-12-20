@@ -36,6 +36,7 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             cursor: pointer;
             transition: transform 0.3s ease;
+            text-decoration: none;
         }
         .map-item img {
             width: 100%;
@@ -48,6 +49,17 @@
         }
         .map-item:active {
             transform: scale(0.98);
+        }
+        .map-item span {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
         }
         .nav-buttons {
             display: flex;
@@ -72,12 +84,15 @@
     <div class="map-container" id="mapContainer">
         <a href="https://www.google.com/maps/d/edit?mid=1pr8hUGRZSbk4G1NkrwT29yIviA7SQbM&usp=sharing" target="_blank" class="map-item">
             <img src="https://via.placeholder.com/600x200?text=Азиатский+маршрут" alt="Азиатский маршрут">
+            <span>Азиатский маршрут</span>
         </a>
         <a href="https://www.google.com/maps/d/edit?mid=1pr8hUGRZSbk4G1NkrwT29yIviA7SQbM&usp=sharing" target="_blank" class="map-item">
-            <img src="https://via.placeholder.com/600x200?text=Галатский+маршрут" alt="Галатский маршрут">
+            <img src="C:\Users\User\PycharmProjects\mini_app/download.png?text=Галатский+маршрут" alt="Галатский маршрут">
+            <span>Галатский маршрут</span>
         </a>
         <a href="https://www.google.com/maps/d/edit?mid=1pr8hUGRZSbk4G1NkrwT29yIviA7SQbM&ll=41.029506887838146%2C28.983235450000002&z=15" target="_blank" class="map-item">
             <img src="https://via.placeholder.com/600x200?text=Европейский+маршрут" alt="Европейский маршрут">
+            <span>Европейский маршрут</span>
         </a>
     </div>
 
